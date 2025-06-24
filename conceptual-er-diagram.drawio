@@ -1,0 +1,230 @@
+<mxfile host="65bd71144e">
+    <diagram name="Conceptual ER Diagram (Japanese)" id="conceptual-er-jp">
+        <mxGraphModel dx="847" dy="878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="2200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="member-entity" value="会員&lt;br&gt;&lt;br&gt;会員ID&lt;br&gt;氏名&lt;br&gt;メールアドレス&lt;br&gt;パスワードハッシュ&lt;br&gt;郵便番号&lt;br&gt;性別&lt;br&gt;生年月日&lt;br&gt;子供の人数&lt;br&gt;末子の生年月日&lt;br&gt;通知設定&lt;br&gt;二段階認証設定&lt;br&gt;作成日時&lt;br&gt;更新日時&lt;br&gt;削除フラグ" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="100" width="160" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-entity" value="店舗&lt;br&gt;&lt;br&gt;店舗ID&lt;br&gt;店舗名&lt;br&gt;収容人数&lt;br&gt;駐車場有無&lt;br&gt;モバイルオーダー対応&lt;br&gt;電話番号&lt;br&gt;サービス情報&lt;br&gt;作成日時&lt;br&gt;更新日時&lt;br&gt;削除フラグ" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="100" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="address-entity" value="住所&lt;br&gt;&lt;br&gt;住所ID&lt;br&gt;会員ID&lt;br&gt;郵便番号&lt;br&gt;都道府県市区町村&lt;br&gt;詳細住所&lt;br&gt;建物種別&lt;br&gt;表札名&lt;br&gt;建物外観&lt;br&gt;会社名&lt;br&gt;部署名&lt;br&gt;配送メモ&lt;br&gt;デフォルト設定&lt;br&gt;作成日時&lt;br&gt;更新日時&lt;br&gt;削除フラグ" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="450" width="160" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-hours-entity" value="店舗営業時間&lt;br&gt;&lt;br&gt;営業時間ID&lt;br&gt;店舗ID&lt;br&gt;サービス種別&lt;br&gt;開店時間&lt;br&gt;閉店時間&lt;br&gt;曜日" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="360" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="favorite-stores-entity" value="お気に入り店舗&lt;br&gt;&lt;br&gt;お気に入りID&lt;br&gt;会員ID&lt;br&gt;店舗ID&lt;br&gt;作成日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="100" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-entity" value="商品&lt;br&gt;&lt;br&gt;商品ID&lt;br&gt;商品名&lt;br&gt;説明&lt;br&gt;基準価格&lt;br&gt;カテゴリ&lt;br&gt;画像URL&lt;br&gt;販売可能フラグ&lt;br&gt;作成日時&lt;br&gt;更新日時&lt;br&gt;削除フラグ" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="100" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-entity" value="メニュー&lt;br&gt;&lt;br&gt;メニューID&lt;br&gt;メニュー名&lt;br&gt;メニュー種別&lt;br&gt;基準価格&lt;br&gt;販売開始日&lt;br&gt;販売終了日&lt;br&gt;時間帯&lt;br&gt;店内受取可能&lt;br&gt;配達可能&lt;br&gt;販売可能フラグ&lt;br&gt;作成日時&lt;br&gt;更新日時&lt;br&gt;削除フラグ" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="100" width="160" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-items-entity" value="メニュー構成&lt;br&gt;&lt;br&gt;メニュー構成ID&lt;br&gt;メニューID&lt;br&gt;商品ID&lt;br&gt;数量&lt;br&gt;置換可能フラグ&lt;br&gt;置換カテゴリ&lt;br&gt;追加料金&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="360" width="160" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-variations-entity" value="商品バリエーション&lt;br&gt;&lt;br&gt;バリエーションID&lt;br&gt;商品ID&lt;br&gt;バリエーション名&lt;br&gt;価格差分&lt;br&gt;販売可能フラグ&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="260" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-menu-additions-entity" value="店舗別価格加算&lt;br&gt;&lt;br&gt;店舗価格加算ID&lt;br&gt;店舗ID&lt;br&gt;メニューID&lt;br&gt;価格加算額&lt;br&gt;適用開始日時&lt;br&gt;適用終了日時&lt;br&gt;有効フラグ&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="420" width="160" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-entity" value="クーポン&lt;br&gt;&lt;br&gt;クーポンID&lt;br&gt;クーポンコード&lt;br&gt;クーポン名&lt;br&gt;最大注文数量&lt;br&gt;有効期限&lt;br&gt;割引金額&lt;br&gt;割引率&lt;br&gt;有効フラグ&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="100" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-stores-entity" value="クーポン適用店舗&lt;br&gt;&lt;br&gt;クーポン店舗ID&lt;br&gt;クーポンID&lt;br&gt;店舗ID" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="360" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-menus-entity" value="クーポン適用商品&lt;br&gt;&lt;br&gt;クーポン商品ID&lt;br&gt;クーポンID&lt;br&gt;メニューID&lt;br&gt;商品ID" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="480" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-entity" value="注文&lt;br&gt;&lt;br&gt;注文ID&lt;br&gt;会員ID&lt;br&gt;店舗ID&lt;br&gt;住所ID&lt;br&gt;注文ステータス&lt;br&gt;受取方法&lt;br&gt;小計&lt;br&gt;税額&lt;br&gt;配送料&lt;br&gt;割引額&lt;br&gt;合計金額&lt;br&gt;注文日時&lt;br&gt;受取時間&lt;br&gt;配達時間&lt;br&gt;特別指示&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="830" width="160" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-details-entity" value="注文詳細&lt;br&gt;&lt;br&gt;注文詳細ID&lt;br&gt;注文ID&lt;br&gt;商品ID&lt;br&gt;メニューID&lt;br&gt;数量&lt;br&gt;単価&lt;br&gt;合計価格&lt;br&gt;注文時単価&lt;br&gt;標準価格&lt;br&gt;価格調整額&lt;br&gt;調整理由&lt;br&gt;置換商品フラグ&lt;br&gt;カスタマイズ内容&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="830" width="160" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-coupons-entity" value="注文クーポン&lt;br&gt;&lt;br&gt;注文クーポンID&lt;br&gt;注文ID&lt;br&gt;クーポンID&lt;br&gt;適用割引額" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="830" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="cart-entity" value="カート&lt;br&gt;&lt;br&gt;カートID&lt;br&gt;会員ID&lt;br&gt;商品ID&lt;br&gt;メニューID&lt;br&gt;数量&lt;br&gt;カスタマイズ内容&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="830" width="160" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="payment-entity" value="決済&lt;br&gt;&lt;br&gt;決済ID&lt;br&gt;注文ID&lt;br&gt;決済方法&lt;br&gt;決済プロバイダ&lt;br&gt;取引ID&lt;br&gt;金額&lt;br&gt;決済ステータス&lt;br&gt;決済日時&lt;br&gt;決済詳細情報&lt;br&gt;作成日時&lt;br&gt;更新日時" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="830" width="160" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="region-entity" value="地域&lt;br&gt;&lt;br&gt;地域ID&lt;br&gt;地域名&lt;br&gt;郵便番号プレフィックス&lt;br&gt;配達可能フラグ&lt;br&gt;配送料&lt;br&gt;配達時間（分）" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1420" y="100" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-regions-entity" value="店舗地域&lt;br&gt;&lt;br&gt;店舗地域ID&lt;br&gt;店舗ID&lt;br&gt;地域ID" style="whiteSpace=wrap;html=1;align=left;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1420" y="280" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-address-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="member-entity" target="address-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-address-label" value="登録する" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="410" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-favorite-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="member-entity" target="favorite-stores-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-favorite-label" value="お気に入り登録" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="70" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-favorite-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="favorite-stores-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-hours-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="store-hours-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-hours-label" value="営業時間設定" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="330" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-variation-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="item-entity" target="item-variations-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-variation-label" value="バリエーション" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="230" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-menu-items-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="item-entity" target="menu-items-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-menu-items-label" value="構成される" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="330" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-menu-items-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="menu-entity" target="menu-items-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-menu-items-label" value="構成" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="340" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-additions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="store-menu-additions-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-additions-label" value="価格加算設定" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="380" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-additions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="menu-entity" target="store-menu-additions-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-stores-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="coupon-entity" target="coupon-stores-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-stores-label" value="適用店舗" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="330" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-menus-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="coupon-stores-entity" target="coupon-menus-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-menus-label" value="適用商品" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="450" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-order-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="member-entity" target="order-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-order-label" value="注文する" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="800" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-details-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="order-entity" target="order-details-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-details-label" value="詳細" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="980" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-coupons-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="order-entity" target="order-coupons-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-coupons-label" value="クーポン適用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="800" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-payment-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERone;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="order-entity" target="payment-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="order-payment-label" value="決済" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="1150" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-cart-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="member-entity" target="cart-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="member-cart-label" value="カートに追加" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="700" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="region-store-regions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="region-entity" target="store-regions-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="region-store-regions-label" value="配達地域" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1500" y="250" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-store-regions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="store-regions-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-coupon-stores-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="coupon-stores-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-coupon-stores-label" value="クーポン適用" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="300" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-order-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="store-entity" target="order-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="store-order-label" value="注文受付" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="600" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="address-order-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="address-entity" target="order-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="address-order-label" value="配送先" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="790" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-order-details-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="item-entity" target="order-details-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-order-details-label" value="注文商品" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="650" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-cart-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="item-entity" target="cart-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-cart-label" value="カート商品" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="700" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-order-details-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="menu-entity" target="order-details-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxGeometry>
+                </mxCell>
+                <mxCell id="menu-order-details-label" value="注文メニュー" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="750" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-cart-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="menu-entity" target="cart-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-cart-label" value="カートメニュー" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="650" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-coupon-menus-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="menu-entity" target="coupon-menus-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="menu-coupon-menus-label" value="クーポン対象" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="400" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-coupon-menus-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="item-entity" target="coupon-menus-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="item-coupon-menus-label" value="クーポン対象商品" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="550" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-order-coupons-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" parent="1" source="coupon-entity" target="order-coupons-entity" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="coupon-order-coupons-label" value="使用クーポン" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="700" width="80" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

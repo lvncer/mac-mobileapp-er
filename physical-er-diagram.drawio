@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" version="24.7.17" etag="draw.io" type="device">
+  <diagram name="Physical ER Diagram" id="physical-er">
+    <mxGraphModel dx="2074" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+                 <!-- MEMBERS Table -->
+         <mxCell id="members-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+           <mxGeometry x="40" y="40" width="300" height="400" as="geometry" />
+         </mxCell>
+        <mxCell id="members-title" value="MEMBERS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="members-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="members-fields" value="member_id (PK, NN, INT)&lt;br&gt;name (NN, VARCHAR(100))&lt;br&gt;email (UK, NN, VARCHAR(100))&lt;br&gt;password_hash (NN, VARCHAR(255))&lt;br&gt;postal_code (CHAR(7))&lt;br&gt;gender (CHAR(20))&lt;br&gt;birth_date (DATE)&lt;br&gt;children_count (INT)&lt;br&gt;youngest_child_birth_date (DATE)&lt;br&gt;notification_enabled (NN, BOOLEAN)&lt;br&gt;two_factor_auth (NN, BOOLEAN)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)&lt;br&gt;is_deleted (NN, BOOLEAN)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="members-table">
+          <mxGeometry y="60" width="300" height="340" as="geometry" />
+        </mxCell>
+
+                 <!-- STORES Table -->
+         <mxCell id="stores-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+           <mxGeometry x="400" y="40" width="300" height="280" as="geometry" />
+         </mxCell>
+        <mxCell id="stores-title" value="STORES" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="stores-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="stores-fields" value="store_id (PK, NN, INT)&lt;br&gt;store_name (NN, VARCHAR(100))&lt;br&gt;capacity (INT)&lt;br&gt;parking_available (NN, BOOLEAN)&lt;br&gt;mobile_order_available (NN, BOOLEAN)&lt;br&gt;phone_number (VARCHAR(20))&lt;br&gt;services_json (TEXT)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)&lt;br&gt;is_deleted (NN, BOOLEAN)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="stores-table">
+          <mxGeometry y="60" width="300" height="220" as="geometry" />
+        </mxCell>
+
+                 <!-- ITEMS Table -->
+         <mxCell id="items-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+           <mxGeometry x="760" y="40" width="300" height="280" as="geometry" />
+         </mxCell>
+        <mxCell id="items-title" value="ITEMS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="items-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="items-fields" value="item_id (PK, NN, INT)&lt;br&gt;item_name (NN, VARCHAR(100))&lt;br&gt;description (TEXT)&lt;br&gt;base_price (NN, DECIMAL(8,2))&lt;br&gt;category (NN, VARCHAR(50))&lt;br&gt;image_url (VARCHAR(255))&lt;br&gt;is_available (NN, BOOLEAN)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)&lt;br&gt;is_deleted (NN, BOOLEAN)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="items-table">
+          <mxGeometry y="60" width="300" height="220" as="geometry" />
+        </mxCell>
+
+                 <!-- MENUS Table -->
+         <mxCell id="menus-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+           <mxGeometry x="1120" y="40" width="300" height="360" as="geometry" />
+         </mxCell>
+        <mxCell id="menus-title" value="MENUS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="menus-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="menus-fields" value="menu_id (PK, NN, INT)&lt;br&gt;menu_name (NN, VARCHAR(100))&lt;br&gt;menu_type (NN, VARCHAR(20))&lt;br&gt;base_price (NN, DECIMAL(8,2))&lt;br&gt;sale_start_date (NN, DATE)&lt;br&gt;sale_end_date (DATE)&lt;br&gt;time_period (NN, VARCHAR(20))&lt;br&gt;store_pickup_available (NN, BOOLEAN)&lt;br&gt;delivery_available (NN, BOOLEAN)&lt;br&gt;is_available (NN, BOOLEAN)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)&lt;br&gt;is_deleted (NN, BOOLEAN)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="menus-table">
+          <mxGeometry y="60" width="300" height="300" as="geometry" />
+        </mxCell>
+
+                 <!-- MENU_ITEMS Table -->
+         <mxCell id="menu-items-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+           <mxGeometry x="760" y="360" width="300" height="240" as="geometry" />
+         </mxCell>
+        <mxCell id="menu-items-title" value="MENU_ITEMS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="menu-items-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="menu-items-fields" value="menu_item_id (PK, NN, INT)&lt;br&gt;menu_id (FK, NN, INT)&lt;br&gt;item_id (FK, NN, INT)&lt;br&gt;quantity (NN, INT)&lt;br&gt;is_replaceable (NN, BOOLEAN)&lt;br&gt;replacement_category (VARCHAR(50))&lt;br&gt;additional_price (DECIMAL(8,2))&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="menu-items-table">
+          <mxGeometry y="60" width="300" height="180" as="geometry" />
+        </mxCell>
+
+                 <!-- STORE_MENU_ADDITIONS Table -->
+         <mxCell id="store-menu-additions-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+           <mxGeometry x="400" y="360" width="300" height="280" as="geometry" />
+         </mxCell>
+        <mxCell id="store-menu-additions-title" value="STORE_MENU_ADDITIONS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="store-menu-additions-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store-menu-additions-fields" value="store_menu_addition_id (PK, NN, INT)&lt;br&gt;store_id (FK, NN, INT)&lt;br&gt;menu_id (FK, NN, INT)&lt;br&gt;price_addition (NN, DECIMAL(8,2))&lt;br&gt;effective_from (NN, DATETIME)&lt;br&gt;effective_until (DATETIME)&lt;br&gt;is_active (NN, BOOLEAN)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="store-menu-additions-table">
+          <mxGeometry y="60" width="300" height="220" as="geometry" />
+        </mxCell>
+
+                 <!-- ORDERS Table -->
+         <mxCell id="orders-table" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+           <mxGeometry x="40" y="480" width="300" height="400" as="geometry" />
+         </mxCell>
+        <mxCell id="orders-title" value="ORDERS" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="orders-table">
+          <mxGeometry y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="orders-fields" value="order_id (PK, NN, INT)&lt;br&gt;member_id (FK, NN, INT)&lt;br&gt;store_id (FK, NN, INT)&lt;br&gt;address_id (FK, INT)&lt;br&gt;order_status (NN, VARCHAR(20))&lt;br&gt;delivery_method (NN, VARCHAR(20))&lt;br&gt;subtotal (NN, DECIMAL(10,2))&lt;br&gt;tax_amount (NN, DECIMAL(10,2))&lt;br&gt;delivery_fee (NN, DECIMAL(10,2))&lt;br&gt;discount_amount (NN, DECIMAL(10,2))&lt;br&gt;total_amount (NN, DECIMAL(10,2))&lt;br&gt;order_date (NN, DATETIME)&lt;br&gt;pickup_time (DATETIME)&lt;br&gt;delivery_time (DATETIME)&lt;br&gt;special_instructions (TEXT)&lt;br&gt;created_at (NN, TIMESTAMP)&lt;br&gt;updated_at (NN, TIMESTAMP)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="orders-table">
+          <mxGeometry y="60" width="300" height="340" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <!-- MEMBERS to ORDERS -->
+        <mxCell id="members-orders-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="members-table" target="orders-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="members-orders-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="members-orders-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- STORES to ORDERS -->
+        <mxCell id="stores-orders-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="stores-table" target="orders-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stores-orders-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="stores-orders-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- STORES to STORE_MENU_ADDITIONS -->
+        <mxCell id="stores-additions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="stores-table" target="store-menu-additions-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="stores-additions-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="stores-additions-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MENUS to STORE_MENU_ADDITIONS -->
+        <mxCell id="menus-additions-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="menus-table" target="store-menu-additions-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="menus-additions-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="menus-additions-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- MENUS to MENU_ITEMS -->
+        <mxCell id="menus-menu-items-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="menus-table" target="menu-items-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="menus-menu-items-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="menus-menu-items-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ITEMS to MENU_ITEMS -->
+        <mxCell id="items-menu-items-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="items-table" target="menu-items-table">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="items-menu-items-label" value="1:N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="items-menu-items-rel">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile> 
